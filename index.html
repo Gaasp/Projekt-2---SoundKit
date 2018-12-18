@@ -7,8 +7,47 @@
     <title>Document</title>
 </head>
 <body>
-    <script>
-                        //pisze kod test123 czy dziala
+        <audio id="dzwiek_q" controls style="display:none">
+            <source src="https://wseii-my.sharepoint.com/:u:/r/personal/rbrzegowy_wsei_edu_pl/Documents/%23ewsei/sounds/boom.wav?csf=1&e=NW0VjQ" type="audio/mpeg"> 
+            </audio>
+        <audio id="dzwiek_w" controls style="display:none">
+            <source src="https://wseii-my.sharepoint.com/:u:/r/personal/rbrzegowy_wsei_edu_pl/Documents/%23ewsei/sounds/clap.wav?csf=1&e=yknQCt" type="audio/mpeg">
+            </audio>
+        <audio id="dzwiek_e" controls style="display:none">
+            <source src="https://wseii-my.sharepoint.com/:u:/r/personal/rbrzegowy_wsei_edu_pl/Documents/%23ewsei/sounds/hihat.wav?csf=1&e=Y47jMy" type="audio/mpeg">
+            </audio>
+        <audio id="dzwiek_r" controls style="display:none">
+            <source src="https://wseii-my.sharepoint.com/:u:/r/personal/rbrzegowy_wsei_edu_pl/Documents/%23ewsei/sounds/snare.wav?csf=1&e=EOSaR9" type="audio/mpeg">
+            </audio>
+        <audio id="dzwiek_t" controls style="display:none">
+            <source src="https://wseii-my.sharepoint.com/:u:/r/personal/rbrzegowy_wsei_edu_pl/Documents/%23ewsei/sounds/tom.wav?csf=1&e=zwjRqc" type="audio/mpeg">
+            </audio>
+        <audio id="dzwiek_y" controls style="display:none">
+            <source src="https://wseii-my.sharepoint.com/:u:/r/personal/rbrzegowy_wsei_edu_pl/Documents/%23ewsei/sounds/ride.wav?csf=1&e=mC2jaM" type="audio/mpeg">
+            </audio>
+        <script>
+            document.addEventListener('keydown',function(e)
+            {
+                if (e.keyCode == 81){
+                    document.getElementById('dzwiek_q').play(); //boom.wav
+                }
+                if (e.keyCode == 87){
+                    document.getElementById('dzwiek_w').play(); //clap.wav
+                }
+                if (e.keyCode == 69){
+                    document.getElementById('dzwiek_e').play(); //hithat.wav
+                }
+                if (e.keyCode == 82){
+                    document.getElementById('dzwiek_r').play(); //snare.wav
+                }
+                if (e.keyCode == 84){
+                    document.getElementById('dzwiek_t').play(); //tom.wav
+                }
+                if (e.keyCode == 89){
+                    document.getElementById('dzwiek_y').play(); //ride.wav
+                }
+            });
+                        //zostało do zrobienia grafika, nagrywanie, odwarzanie
         </script>
 </body>
 </html>
